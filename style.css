@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+input{
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.527);
+    border: 1px solid rgb(76, 74, 74);
+    color: rgb(76, 74, 74);
+    text-align: center;
+}
+input::placeholder{
+    text-align: center;
+}
+#mgen,#fgen{
+    background-color:  rgb(0, 0, 0);
+    border: 1px solid rgb(76, 74, 74);
+    scale: 95%;
+    transition: scale 0.3s;
+}
+#button button{
+    border: 1px solid;
+    border-radius: 50%;
+    width: 100%;
+}
+i{
+    color: rgb(76, 74, 74);
+}
+#mgen:hover,#fgen:hover{
+    scale: 100%;
+    border: 1px solid white;
+}
+#ans:hover {
+    background-color: green;
+    color: white;
+    transition: all 0.3s;
+}

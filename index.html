@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="h-100 w-100 d-flex justify-content-center align-items-center text-center" style="background-color: rgb(0, 0, 0);">
+    <div class="w-25 border border-dark border-2 d-flex flex-column pt-2" style="color: rgb(76, 74, 74); background-color: rgb(0, 0, 0);height: 70%;">
+        <h3 style="color: rgb(91, 91, 91);" class="mt-2">BMI CALCULATOR</h3>
+        <div class="gender d-flex justify-content-evenly align-items-center h-25">
+            <div id="men" class="w-25 h-75 d-flex flex-column align-items-center justify-content-center "><button id="mgen" onclick="genm()" class="w-100 h-100 d-flex flex-column align-items-center justify-content-center "><i class="fa-solid fa-mars fs-1 m"></i><span class="m" style="font-size: small;color: rgb(76, 74, 74);">MALE</span></button></div>
+            <div id="female" class="w-25 h-75 d-flex flex-column align-items-center justify-content-center "><button id="mgen" onclick="genf()" class="w-100 h-100 d-flex flex-column align-items-center justify-content-center "><i class="fa-solid fa-venus fs-1 f"></i><span class="f" style="font-size: small;color: rgb(76, 74, 74);">FEMALE</span></button></div>
+        </div>
+        <div id="height" class="w-100 d-flex justify-content-center align-items-center flex-column" style="background-color: rgba(0, 0, 0, 0.468);height: 20%;border: 1px solid rgb(76, 74, 74);
+">
+            <h6 id="hei">HEIGHT</h6>
+            <input id="heigh"type="number" placeholder="in cm" style="height: 25%;">
+        </div>
+        <div id="weightandage" class="w-100 d-flex justify-content-center gap-5 align-items-center" style="height: 25%;">
+            <div id="weight" class="h-75 d-flex flex-column justify-content-center align-items-center" style="width: 30%;">
+                <h6 id="wei">WEIGHT</h6>
+                <input id="weigh" type="number" placeholder="in kg">
+                <div id="button" class="d-flex justify-content-center align-items-center w-50 gap-2 mt-2"><i onclick="weightincrement()" class="fa-solid fa-circle-plus plus" style="color: rgb(76, 74, 74);"></i><i onclick="weightdecrement()" class="fa-solid fa-circle-minus minus" style="color: rgb(76, 74, 74);"></i></div>
+            </div>
+            <div id="age" class="h-75 d-flex flex-column justify-content-center align-items-center" style="width: 30%;">
+                <h6 id="ag">AGE</h6>
+                <input id="aged" type="number">
+                <div id="button" class="d-flex justify-content-center align-items-center w-50 gap-2 mt-2"><i onclick="ageincrement()" class="fa-solid fa-circle-plus plus" style="color: rgb(76, 74, 74);"></i><i onclick="agedecrement()" class="fa-solid fa-circle-minus minus" style="color: rgb(76, 74, 74);"></i></div>
+            </div>
+        </div>
+        <div id="result" class="d-flex justify-content-center align-items-center" style="height: 10%;">
+            <button id="ans" onclick="calc()" class="w-50 h-50" style="scale: 110%; background: transparent;border: 1px solid rgb(76, 74, 74); color: rgb(76, 74, 74);">CALCULATE</button>
+        </div>
+        <div id="bmi" class="mt-4" style="height: 10%;">
+            BMI : 
+        </div>
+        <div id="fat" class="mt-2" style="height: 10%;">
+            BODY FAT : 
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
