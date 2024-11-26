@@ -67,6 +67,3 @@ ageincrement = function () {
 agedecrement = function () {
   aged.value--;
 };
-hei = function () {
-    hei.style.colour="rgb(91, 91, 91)"
-}
