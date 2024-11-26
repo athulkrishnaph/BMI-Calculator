@@ -32,8 +32,3 @@ i{
     scale: 100%;
     border: 1px solid white;
 }
-#ans:hover {
-    background-color: green;
-    color: white;
-    transition: all 0.3s;
-}

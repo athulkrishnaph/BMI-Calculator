@@ -32,8 +32,12 @@ genm = function () {
     men.style.transform = "scale(1.05)";
     const mElements = document.getElementsByClassName("m");
     for (const m of mElements) {
-        m.style.color = "lightblue";
-    }
+        m.style.color = "blue";
+  }
+  const fElements = document.getElementsByClassName("f");
+    for (const f of fElements) {
+        f.style.color = "rgb(76, 74, 74)";
+  }
     men.style.transition="transform 0.3s"
     female.style.transform = "scale(1)";
 };
@@ -42,7 +46,11 @@ genf = function () {
     men.style.transform = "scale(1)";
     const fElements = document.getElementsByClassName("f");
     for (const f of fElements) {
-        f.style.color = "pink";
+        f.style.color = "violet";
+  }
+  const mElements = document.getElementsByClassName("m");
+    for (const m of mElements) {
+        m.style.color = "rgb(76, 74, 74)";
     }
     female.style.transition="transform 0.3s"
     female.style.transform = "scale(1.05)";
